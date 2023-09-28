@@ -6,6 +6,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 .container {
@@ -25,16 +26,17 @@ body {
   width: 60%;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
-.container_right div {
+.container_right > div {
   flex: 1;
-  padding: 20px;
+  padding: 10px 40px;
 }
 
-.container_right :first-child,
-.container_right :last-child {
-  background-color: RGB(240, 240, 240);
+.container_right > div:first-child,
+.container_right > div:last-child {
+  background-color: RGB(245, 245, 245);
 }
 
 .container_left div {
@@ -64,6 +66,80 @@ img {
   color: white;
 }
 
+label {
+  display: block;
+  font-size: 0.8rem;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 700px;
+  gap: 40px;
+}
+
 a {
   color: white;
+}
+
+#h22 {
+  margin-top: 220px;
+}
+
+button {
+  background-color: #596d48;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 0.4rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  box-shadow: 0px 5px 10px #596d48;
+  margin-top: 20px;
+}
+
+input {
+  appearance: none;
+  padding: 5px 10px;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  width: 250px;
+}
+
+.error:invalid {
+  border: 1px solid red;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid lightblue;
+  box-shadow: 8px 5px 5px lightblue;
+}
+
+.login {
+  color: #596d48;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login:hover {
+  text-decoration: underline;
+}
+
+.container_right > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+button:hover {
+  background-color: #7ca56f;
+}
+
+.container_right > div:last-child {
+  padding 30px;
 }
